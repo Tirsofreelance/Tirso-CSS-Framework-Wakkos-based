@@ -1,0 +1,165 @@
+/*------------------------------------*\
+    $SITIO
+\*------------------------------------*/
+
+
+@-webkit-viewport {
+	width : device-width;
+}
+
+@-moz-viewport {
+	width : device-width;
+}
+
+@-ms-viewport {
+	width : device-width;
+}
+
+@-o-viewport {
+	width : device-width;
+}
+
+@viewport {
+	width : device-width;
+}
+
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+  margin:0;
+	padding:0;
+}
+
+html {
+	background : $background;
+	font-size : 100%;
+	-webkit-overflow-scrolling : touch;
+	-webkit-tap-highlight-color : lighten($basecolor, 75%);
+	-webkit-text-size-adjust : 100%;
+	-ms-text-size-adjust : 100%;
+}
+
+body {
+	margin : 0;
+	padding : 0;
+	width : 100%;
+	background-color : transparent;
+	font-family : $basefont;
+	@include font-size();
+	line-height : $baselineheight;
+	color : $textcolor;
+}
+
+/**
+* A partir de aquí es donde debes escribir los estilos de posicionamiento
+* y detalles que forman tu web. Disfruta!
+*/
+
+/*------------------------------------*\
+    $CLASES
+\*------------------------------------*/
+
+/*--COLORES--*/
+
+.basecolor{
+	background: $basecolor;
+}
+
+.baselight{
+	background: $baselight;
+}
+
+.secondary{
+	background: $secondary;
+}
+
+.compcolor {
+	background: $compcolor;
+}
+
+.superdark {
+	background: $superdark;
+}
+
+.darkergrey {
+	background: $darkergrey;
+}
+
+.grey{
+	background: $grey;
+}
+
+.lightgrey{
+	background: $lightgrey;
+}
+
+.white 	{
+	background: $white;
+}
+
+/*--HEADER--*/
+
+.logo{
+
+	background: $black;
+	border-radius:50%;
+	display: table;
+	height: 140px;
+	margin:auto;
+	text-align:center;
+	width: 140px;
+}
+.logo p{
+	color: rgba(255,255,255,.9);
+	display: table-cell;
+	vertical-align: middle;
+}
+/*--ROWS--*/
+
+.row{
+
+	display: block;
+	width:100%;
+}
+
+
+
+/*--COLUMNS--*/
+
+.col{
+	border: 1px dotted $red;
+	display: table;
+	margin: 0;
+	padding:.5em;
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+.col--12{
+	display: inline-block;
+	width: 100%;
+	
+}
+
+.col--6{
+	display: inline-block;
+	width: 100%;
+}
+
+.col--3{
+	display: inline-block;
+	width: 100%;
+}
+
+.col--2{
+	display: inline-block;
+	width: 50%;
+}
+
+.col--1{
+	display: inline-block;
+	width: 25%;
+}
